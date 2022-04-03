@@ -1,0 +1,18 @@
+div.fruta-icon {
+    position: relative;
+    display: flex;
+    width: 5%;
+    height: 5%;
+    padding: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: #CC5648;
+    cursor: pointer;
+}
+
+div.fruta-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
