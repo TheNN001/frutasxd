@@ -1,3 +1,6 @@
 <div class="fruta-main-menu" *ngIf="frutas$">
     <app-fruta-icon *ngFor="let fruta of frutas$" [frutaInfo]="fruta"></app-fruta-icon>
 </div>
+<div class="fruta-desc">
+    <app-fruta-desc></app-fruta-desc>
+</div>

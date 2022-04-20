@@ -6,7 +6,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FrutasModule } from './frutas/frutas.module';
-import { FrutaDescComponent } from './fruta/fruta-desc/fruta-desc.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -14,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, FrutaDescComponent],
+  declarations: [AppComponent, DashboardComponent],
   imports: [
     BrowserModule,
     FrutasModule,

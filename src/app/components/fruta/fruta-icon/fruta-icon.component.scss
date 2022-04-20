@@ -1,6 +1,8 @@
 div.fruta-icon {
     position: relative;
     display: flex;
+    top: 0;
+    left: 0;
     width: 100px;
     height: 100px;
     padding: 30px;
@@ -9,6 +11,15 @@ div.fruta-icon {
     align-items: center;
     background: #CC5648;
     cursor: pointer;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 50%);
+    transition: .5s;
+}
+
+div.fruta-icon:hover {
+    top: -3px;
+    left: -3px;
+    box-shadow: 5px 5px 3px rgb(0 0 0 / 50%);
+    transition: .5s;
 }
 
 div.fruta-icon img {
