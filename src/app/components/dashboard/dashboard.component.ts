@@ -6,9 +6,13 @@ import { FrutasService } from 'src/app/frutas/frutas.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
   errorMessage = '';
+  frutas$ = this.frutasService.frutas$;
+  frutaHover: boolean = false;
   constructor(private frutasService: FrutasService) { }
 
-  frutas$ = this.frutasService.frutas$;
+  ngOnInit(): void {
+    this.frutaHover = false;
+  }
 }
