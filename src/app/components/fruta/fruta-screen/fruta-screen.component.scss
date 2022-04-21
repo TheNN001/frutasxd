@@ -1,0 +1,33 @@
+div.screen-holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+div.screen-holder div.screen-img {
+    position: relative;
+    display: flex;
+    width: 30%;
+}
+
+div.screen-holder div.screen-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+div.screen-holder div.screen-info {
+    position: relative;
+    display: block;
+    width: calc(70% - 20px);
+    margin-left: 20px;
+}
+
+div.screen-holder div.screen-info label {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}

@@ -1,6 +1,11 @@
-<div class="fruta-main-menu" *ngIf="frutas$">
-    <app-fruta-icon *ngFor="let fruta of frutas$" [frutaInfo]="fruta" (mouseenter)="frutaHover(fruta.fruta_id)" (mouseleave)="frutaHoverBool = !frutaHoverBool"></app-fruta-icon>
+<div class="fruta-main">
+    <div class="fruta-main-menu" *ngIf="frutas$">
+        <app-fruta-icon *ngFor="let fruta of frutas$" [frutaInfo]="fruta" (mouseenter)="frutaHover(fruta.fruta_id)" (mouseleave)="frutaHoverBool = !frutaHoverBool"></app-fruta-icon>
+    </div>
+    <div class="fruta-desc" *ngIf="frutaHoverBool">
+        <app-fruta-desc [frutaInfo]="frutaSel"></app-fruta-desc>
+    </div>
 </div>
-<div class="fruta-desc" *ngIf="frutaHoverBool">
-    <app-fruta-desc [frutaInfo]="frutaSel"></app-fruta-desc>
+<div class="fruta-screen">
+    <app-fruta-screen id="frutaScrn{{fruta.fruta_id}}" *ngFor="let fruta of frutas$" [frutaInfo]="fruta" [style.background]="fruta.fruta_color" ></app-fruta-screen>
 </div>

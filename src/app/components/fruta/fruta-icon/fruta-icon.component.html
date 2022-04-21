@@ -1,3 +1,3 @@
-<div class="fruta-icon" [style.background]="frutaInfo?.fruta_color">
+<div class="fruta-icon" (click)="frutaScroll(frutaInfo?.fruta_id)" [style.background]="frutaInfo?.fruta_color">
     <img src="{{frutaInfo?.fruta_img_link}}" />
 </div>

@@ -1,3 +1,9 @@
+div.fruta-main {
+    position: relative;
+    display: block;
+    height: 55vh;
+}
+
 div.fruta-main-menu {
     position: relative;
     display: flex;
@@ -12,4 +18,20 @@ div.fruta-main-menu app-fruta-icon {
     display: block;
     width: min-content;
     margin: 0 10px;
+}
+
+div.fruta-screen {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+div.fruta-screen app-fruta-screen {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #D56B5E;
+    justify-content: center;
+    align-items: center;
 }

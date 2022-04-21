@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Fruta } from 'src/app/frutas/fruta';
 
@@ -8,5 +9,9 @@ import { Fruta } from 'src/app/frutas/fruta';
 })
 export class FrutaIconComponent {
   @Input() frutaInfo: Fruta | undefined;
-  constructor() { }
+  constructor(private scroller : ViewportScroller) { }
+
+  frutaScroll(frutaId : number | undefined) : void {
+    this.scroller.scrollToAnchor('frutaScrn' + frutaId);
+  }
 }

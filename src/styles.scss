@@ -14,3 +14,7 @@ $txt-general: 1rem;
     font-size: $txt-general;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
