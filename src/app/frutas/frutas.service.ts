@@ -36,7 +36,7 @@ export class FrutasService {
       "fruta_name": "Naranja",
       "fruta_img_link": "https://i.ibb.co/M703ZRg/orang.png",
       "fruta_color": "#E79726",
-      "fruta_desc": "Fruto del naranjo, comestible, de forma redonda, cáscara gruesa y rugosa y pulpa dividida en gajos, agridulce y muy jugosa."
+      "fruta_desc": "Es un hesperidio carnoso de cáscara más o menos gruesa y endurecida, y su pulpa está formada típicamente por once gajos u hollejos llenos de jugo, el cual contiene mucha vitamina C, flavonoides y aceites esenciales."
     },
     {
       "fruta_id": 5,
