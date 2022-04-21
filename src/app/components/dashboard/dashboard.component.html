@@ -1,6 +1,6 @@
 <div class="fruta-main-menu" *ngIf="frutas$">
-    <app-fruta-icon *ngFor="let fruta of frutas$" [frutaInfo]="fruta" (mouseenter)="frutaHover = true" (mouseleave)="frutaHover = false"></app-fruta-icon>
+    <app-fruta-icon *ngFor="let fruta of frutas$" [frutaInfo]="fruta" (mouseenter)="frutaHover(fruta.fruta_id)" (mouseleave)="frutaHoverBool = !frutaHoverBool"></app-fruta-icon>
 </div>
-<div class="fruta-desc" *ngIf="frutaHover">
-    <app-fruta-desc></app-fruta-desc>
+<div class="fruta-desc" *ngIf="frutaHoverBool">
+    <app-fruta-desc [frutaInfo]="frutaSel"></app-fruta-desc>
 </div>
